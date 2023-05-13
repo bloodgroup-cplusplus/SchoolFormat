@@ -23,10 +23,14 @@ void Widget::on_pushButton_clicked()
     if(!sqlitedb.open())
     {
         std::cout<<"Database is not connected "<<std::endl;
+        // if you have a label on your ui 
+        ui->label-setText("database is not connected");
     }
     else
     {
         std::cout<<"Database is connected "<<std::endl;
+        // if you have a label field on your ui 
+        ui->label->setText("database is connected ");
     }
 
 }
